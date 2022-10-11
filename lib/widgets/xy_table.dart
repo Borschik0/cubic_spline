@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 
+import '../coordinates.dart';
+
 class TableXY extends StatelessWidget {
   const TableXY({Key? key}) : super(key: key);
 
@@ -47,30 +49,30 @@ class TableXY extends StatelessWidget {
         DataColumn(label: Expanded(
             child: Text('8', style: TextStyle(fontStyle: FontStyle.italic, fontWeight: FontWeight.bold),)
         )),
-      ], rows: const <DataRow> [
+      ], rows:  <DataRow> [
         DataRow(cells: <DataCell>[
-          DataCell(Text('x', style: TextStyle(fontStyle: FontStyle.italic, fontWeight: FontWeight.bold))),
-          DataCell(Text('-4')),
-          DataCell(Text('-3')),
-          DataCell(Text('-2')),
-          DataCell(Text('-1')),
-          DataCell(Text('0')),
-          DataCell(Text('1')),
-          DataCell(Text('2')),
-          DataCell(Text('3')),
-          DataCell(Text('4')),
+          const DataCell(Text('x', style: TextStyle(fontStyle: FontStyle.italic, fontWeight: FontWeight.bold))),
+          DataCell(Text('${x[0]}')),
+          DataCell(Text('${x[1]}')),
+          DataCell(Text('${x[2]}')),
+          DataCell(Text('${x[3]}')),
+          DataCell(Text('${x[4]}')),
+          DataCell(Text('${x[5]}')),
+          DataCell(Text('${x[6]}')),
+          DataCell(Text('${x[7]}')),
+          DataCell(Text('${x[8]}')),
         ]),
         DataRow(cells: <DataCell>[
-          DataCell(Text('y', style: TextStyle(fontStyle: FontStyle.italic, fontWeight: FontWeight.bold))),
-          DataCell(Text('-3,02721')),
-          DataCell(Text('0,42336')),
-          DataCell(Text('1,81859')),
-          DataCell(Text('0,84147')),
-          DataCell(Text('0')),
-          DataCell(Text('0,84147')),
-          DataCell(Text('1,81859')),
-          DataCell(Text('0,42336')),
-          DataCell(Text('-3,02721')),
+          const DataCell(Text('y', style: TextStyle(fontStyle: FontStyle.italic, fontWeight: FontWeight.bold))),
+          DataCell(Text('${y[0]}')),
+          DataCell(Text('${y[1]}')),
+          DataCell(Text('${y[2]}')),
+          DataCell(Text('${y[3]}')),
+          DataCell(Text('${y[4]}')),
+          DataCell(Text('${y[5]}')),
+          DataCell(Text('${y[6]}')),
+          DataCell(Text('${y[7]}')),
+          DataCell(Text('${y[8]}')),
         ]),
       ]),
     );

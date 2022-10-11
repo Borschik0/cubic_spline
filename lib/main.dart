@@ -1,4 +1,4 @@
-import 'package:cubic_spline/widgets/xy_table.dart';
+import 'package:cubic_spline/main_screen.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -26,7 +26,7 @@ class MyApp extends StatelessWidget {
         // is not restarted.
         primarySwatch: Colors.blue,
       ),
-      home: const TableXY(),
+      home: MainScreen(),
     );
   }
 }
